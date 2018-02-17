@@ -1,0 +1,7 @@
+<body>
+hi <br>
+<textarea id="box" rows="4" cols="50"></textarea>
+<br>
+<button type="button" onclick="var box = document.getElementById('box'); try{ret = new Function(box.value)();}catch(e){ret = e.toString();} document.getElementById('output').innerHTML += ret + '<br>'">run</button>
+<div id="output"></div>
+</body>
